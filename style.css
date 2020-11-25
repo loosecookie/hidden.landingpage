@@ -1,0 +1,354 @@
+/*------------------- CSS RESET -----------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    line-height: 20px;
+}
+
+body {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight:normal;
+    background-color: #fff;
+    line-height: 20px;
+}
+
+/*----------------- TYPOGRAPHY ------------------------*/
+
+
+h1 { /*FEEL LIKE A RESIDENT*/
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    color: white;
+    line-height: 55px;
+    padding-bottom: 20px;}
+
+p { font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    line-height: 25px;}
+
+h2 { /*HEADINGS*/
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 70px;}
+
+h3 { /*SUB HEADINGS*/
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    line-height: 32px;}
+
+h4 { /*SUB SUB HEADINGS*/
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 70px;}
+
+
+/*------------------- LINKS ----------------------------*/
+
+a { color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.button {
+    padding: 13px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    background-color: #EC8C34;
+    border-radius: 5px;
+    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
+    transition: all 0.3s ease 0s;
+} 
+
+.button:hover {
+  transform: translateY(-5px);
+} 
+
+/*------------------ NAVIGATION -------------------------*/
+
+nav {
+    display: grid;
+    z-index:1;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 
+    "navlogo navlinks";
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    box-shadow: 1px 1px 4px rgba(0,0,0, 0.1);}
+
+.navlogo {
+    grid-area: navlogo;
+    padding:  5px 0px 5px 130px;}
+
+
+.navlinks {
+    grid-area: navlinks;
+    text-align: right;
+    padding:  10px 130px 10px 0px;}
+
+nav a:link {color: #fff}
+
+nav a:visited {color: #fff;}
+
+nav a:hover {
+    -webkit-transition: all 0.2s ease-in;}
+
+/*------------------ HEADER GRID -------------------------*/
+
+.headergrid {
+    display: grid;
+    padding: 160px 90px 0px 130px;
+    background-repeat: no-repeat;
+    background-image: url(Background.png);
+    background-size: cover;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "headertext headerimg";}
+
+.headertext {grid-area: headertext;
+    padding: 60px 0px 0px 0px;}
+
+.headerimg {grid-area: headerimg;
+    padding: 0px 0px 70px 20px;}
+
+
+/*------------------ FEATURES GRID -------------------------*/
+
+.featuresgrid {
+    display: grid;
+    padding-top: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "feature1img feature2img feature3img"
+    "feature1text feature2text feature3text";}
+
+.feature1img {grid-area: feature1img;}
+.feature2img {grid-area: feature2img;}
+.feature3img {grid-area: feature3img;}
+
+.feature1text {grid-area: feature1text;
+    padding: 20px;}
+.feature2text {grid-area: feature2text;
+    padding: 20px;}
+.feature3text {grid-area: feature3text;
+    padding: 20px;}
+
+
+/*------------------ SOUVENIR GRID -------------------------*/
+
+.souvenirsgrid {
+    display: grid;
+    padding: 30px 0px;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "souvenir1 souvenir2 souvenir3";}
+
+.souvenir1 {grid-area: souvenir1;}
+.souvenir2 {grid-area: souvenir2;}
+.souvenir3 {grid-area: souvenir3;}
+
+/*------------------ TRENDING GRID -------------------------*/
+
+.trendinggrid {
+    display: grid;
+    padding: 30px 0px;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "positano bali bahamas"
+    "newyork iceland dubai";}
+
+.positano {grid-area: positano;
+    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
+    border-radius: 0px 0px 5px 5px;}
+.bali {grid-area: bali;
+    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
+    border-radius: 0px 0px 5px 5px;}
+.bahamas {grid-area: bahamas;
+    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
+    border-radius: 0px 0px 5px 5px;}
+.newyork {grid-area: newyork;
+    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
+    border-radius: 0px 0px 5px 5px;}
+.iceland {grid-area: iceland;
+    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
+    border-radius: 0px 0px 5px 5px;}
+.dubai {grid-area: dubai;
+    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
+    border-radius: 0px 0px 5px 5px;}
+
+
+.trending1img {grid-area: trending1img;}
+.trending2img {grid-area: trending2img;}
+.trending3img {grid-area: trending3img;}
+.trending4img {grid-area: trending4img;}
+.trending5img {grid-area: trending5img;}
+.trending6img {grid-area: trending6img;}
+
+.trending1text {grid-area: trending1text; height: 90px; padding: 20px;}
+.trending2text {grid-area: trending2text; height: 90px; padding: 20px;}
+.trending3text {grid-area: trending3text; height: 90px; padding: 20px;}
+.trending4text {grid-area: trending4text; height: 90px; padding: 20px;}
+.trending5text {grid-area: trending5text; height: 90px; padding: 20px;}
+.trending6text {grid-area: trending6text; height: 90px; padding: 20px;}
+
+/*------------------ SOUVENIR GRID -------------------------*/
+
+.downloadgrid {
+    display: grid;
+    background-color:#4A9DB2;
+    padding: 60px 130px;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 
+    "downloadtext downloadimg";}
+
+.downloadtext {grid-area: downloadtext;}
+.downloadimg {grid-area: downloadimg;}
+
+/*-------------------- FOOTER ----------------------*/
+
+.fa {
+    padding:10px;
+    margin: 0px 20px;
+    color: #fff;
+    font-size: 28px;
+    width: 28px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #EC8C34;
+    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
+}
+
+.fa:hover {
+    color: white;
+    transform: translateY(-5px); transition-timing-function: ease-in-out; cursor: pointer;
+} 
+
+
+/*-------------------- MEDIA QUERIES - MOBILE ----------------------*/  
+    
+@media screen and (max-width: 450px) {
+
+/*----------------- TYPOGRAPHY ------------------------*/
+
+
+h1 {font-size: 20px;
+    line-height: 55px;
+    padding-bottom: 20px;}
+
+p { font-size: 20px;
+    line-height: 25px;}
+
+h2 {font-size: 40px;
+    line-height: 80px;}
+
+h3 {font-size: 25px;
+    line-height: 32px;}
+
+h4 {font-size: 30px;
+    line-height: 70px;}
+
+
+/*------------------- LINKS ----------------------------*/
+
+.button {
+    padding: 13px 28px;
+    font-size: 16px;
+} 
+
+/*------------------ NAVIGATION -------------------------*/
+
+
+.navlogo {padding:  5px 0px 5px 130px;}
+.navlinks {padding:  10px 130px 10px 0px;}
+
+/*------------------ HEADER GRID -------------------------*/
+
+.headergrid {padding: 160px 90px 0px 130px;}
+    
+.headertext {grid-area: headertext;
+    padding: 60px 0px 0px 0px;}
+
+.headerimg {grid-area: headerimg;
+    padding: 0px 0px 70px 20px;}
+
+
+/*------------------ FEATURES GRID -------------------------*/
+
+.featuresgrid {padding-top: 30px;}
+
+.feature1text {grid-area: feature1text;
+    padding: 20px;}
+.feature2text {grid-area: feature2text;
+    padding: 20px;}
+.feature3text {grid-area: feature3text;
+    padding: 20px;}
+
+
+/*------------------ SOUVENIR GRID -------------------------*/
+
+.souvenirsgrid {padding: 30px 0px;
+    grid-gap: 30px;}
+
+/*------------------ TRENDING GRID -------------------------*/
+
+.trendinggrid {padding: 30px 0px;
+    grid-gap: 30px;}
+
+.positano {grid-area: positano;
+    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
+    border-radius: 0px 0px 5px 5px;}
+.bali {grid-area: bali;
+    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
+    border-radius: 0px 0px 5px 5px;}
+.bahamas {grid-area: bahamas;
+    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
+    border-radius: 0px 0px 5px 5px;}
+.newyork {grid-area: newyork;
+    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
+    border-radius: 0px 0px 5px 5px;}
+.iceland {grid-area: iceland;
+    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
+    border-radius: 0px 0px 5px 5px;}
+.dubai {grid-area: dubai;
+    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
+    border-radius: 0px 0px 5px 5px;}
+
+.trending1text {grid-area: trending1text; height: 90px; padding: 20px;}
+.trending2text {grid-area: trending2text; height: 90px; padding: 20px;}
+.trending3text {grid-area: trending3text; height: 90px; padding: 20px;}
+.trending4text {grid-area: trending4text; height: 90px; padding: 20px;}
+.trending5text {grid-area: trending5text; height: 90px; padding: 20px;}
+.trending6text {grid-area: trending6text; height: 90px; padding: 20px;}
+
+/*------------------ SOUVENIR GRID -------------------------*/
+
+.downloadgrid {padding: 60px 130px;}
+
+/*-------------------- FOOTER ----------------------*/
+
+.fa {
+    padding:10px;
+    margin: 0px 20px;
+    font-size: 28px;
+    width: 28px;
+    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
+}
+
+
+}
