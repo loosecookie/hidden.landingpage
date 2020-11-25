@@ -81,7 +81,7 @@ a { color: #fff;
 nav {
     display: grid;
     z-index:1;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 15% 85%;
     grid-template-areas: 
     "navlogo navlinks";
     background-color: #fff;
@@ -127,6 +127,11 @@ nav a:hover {
 
 /*------------------ FEATURES GRID -------------------------*/
 
+.featuressection{
+    background-color:#24798B; 
+    padding: 60px 130px;
+}
+
 .featuresgrid {
     display: grid;
     padding-top: 30px;
@@ -149,6 +154,11 @@ nav a:hover {
 
 /*------------------ SOUVENIR GRID -------------------------*/
 
+.souvenirsection{
+    background-color:#78C4D8; 
+    padding: 60px 130px;
+}
+
 .souvenirsgrid {
     display: grid;
     padding: 30px 0px;
@@ -162,6 +172,9 @@ nav a:hover {
 .souvenir3 {grid-area: souvenir3;}
 
 /*------------------ TRENDING GRID -------------------------*/
+
+.trendingsection{
+    padding: 60px 130px;}
 
 .trendinggrid {
     display: grid;
@@ -242,23 +255,24 @@ nav a:hover {
 
 /*-------------------- MEDIA QUERIES - MOBILE ----------------------*/  
     
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
 
 /*----------------- TYPOGRAPHY ------------------------*/
 
 
-h1 {font-size: 20px;
-    line-height: 55px;
+h1 {font-size: 40px;
+    line-height: 40px;
     padding-bottom: 20px;}
 
-p { font-size: 20px;
+p { font-size: 18px;
+    line-height: 24px;}
+
+h2 {font-size: 30px;
+    line-height: 40px;
+    padding-bottom: 15px;}
+
+h3 {font-size: 20px;
     line-height: 25px;}
-
-h2 {font-size: 40px;
-    line-height: 80px;}
-
-h3 {font-size: 25px;
-    line-height: 32px;}
 
 h4 {font-size: 30px;
     line-height: 70px;}
@@ -268,77 +282,107 @@ h4 {font-size: 30px;
 
 .button {
     padding: 13px 28px;
-    font-size: 16px;
+    font-size: 14px;
 } 
 
 /*------------------ NAVIGATION -------------------------*/
 
-
-.navlogo {padding:  5px 0px 5px 130px;}
-.navlinks {padding:  10px 130px 10px 0px;}
+nav {
+    display: grid;
+    z-index:1;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: 
+    "navlogo navlinks";
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    box-shadow: 1px 1px 4px rgba(0,0,0, 0.1);}
+    
+.navlogo {padding:  10px 0px 5px 30px;}
+.navlinks {padding:  10px 30px 10px 0px;}
 
 /*------------------ HEADER GRID -------------------------*/
 
-.headergrid {padding: 160px 90px 0px 130px;}
-    
+.headergrid {
+    display: grid;
+    padding: 120px 30px 0px 30px;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "headertext"
+    "headerimg";}
+
 .headertext {grid-area: headertext;
     padding: 60px 0px 0px 0px;}
 
 .headerimg {grid-area: headerimg;
-    padding: 0px 0px 70px 20px;}
+    text-align:center;
+    padding: 60px 0px 70px 0px;}
 
 
 /*------------------ FEATURES GRID -------------------------*/
 
-.featuresgrid {padding-top: 30px;}
-
-.feature1text {grid-area: feature1text;
-    padding: 20px;}
-.feature2text {grid-area: feature2text;
-    padding: 20px;}
-.feature3text {grid-area: feature3text;
-    padding: 20px;}
+.featuressection{padding: 60px 30px;}
+    
+    
+.featuresgrid {
+    display: grid;
+    padding-top: 30px;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "feature1img"
+    "feature1text"
+    "feature2img"
+    "feature2text"
+    "feature3img"
+    "feature3text";}
 
 
 /*------------------ SOUVENIR GRID -------------------------*/
 
-.souvenirsgrid {padding: 30px 0px;
-    grid-gap: 30px;}
+.souvenirsection{padding: 60px 30px;}
+    
+.souvenirsgrid {
+    display: grid;
+    padding: 30px 0px;
+    grid-gap: 30px;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "souvenir1"
+    "souvenir2"
+    "souvenir3";}
 
 /*------------------ TRENDING GRID -------------------------*/
 
-.trendinggrid {padding: 30px 0px;
-    grid-gap: 30px;}
+.trendingsection{padding: 60px 30px;}
+    
+.trendinggrid {
+    display: grid;
+    padding: 30px 0px;
+    grid-gap: 30px;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "positano"
+    "bali"
+    "bahamas"
+    "newyork"
+    "iceland"
+    "dubai";}
 
-.positano {grid-area: positano;
-    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
-    border-radius: 0px 0px 5px 5px;}
-.bali {grid-area: bali;
-    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
-    border-radius: 0px 0px 5px 5px;}
-.bahamas {grid-area: bahamas;
-    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
-    border-radius: 0px 0px 5px 5px;}
-.newyork {grid-area: newyork;
-    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
-    border-radius: 0px 0px 5px 5px;}
-.iceland {grid-area: iceland;
-    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
-    border-radius: 0px 0px 5px 5px;}
-.dubai {grid-area: dubai;
-    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
-    border-radius: 0px 0px 5px 5px;}
-
-.trending1text {grid-area: trending1text; height: 90px; padding: 20px;}
-.trending2text {grid-area: trending2text; height: 90px; padding: 20px;}
-.trending3text {grid-area: trending3text; height: 90px; padding: 20px;}
-.trending4text {grid-area: trending4text; height: 90px; padding: 20px;}
-.trending5text {grid-area: trending5text; height: 90px; padding: 20px;}
-.trending6text {grid-area: trending6text; height: 90px; padding: 20px;}
-
+ 
 /*------------------ SOUVENIR GRID -------------------------*/
 
-.downloadgrid {padding: 60px 130px;}
+.downloadgrid {
+    display: grid;
+    background-color:#4A9DB2;
+    padding: 60px 30px;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "downloadtext"
+    "downloadimg";}
+    
+.downloadimg {grid-area: downloadimg;
+    text-align: center;
+    padding: 60px 0px 0px 0px;}
 
 /*-------------------- FOOTER ----------------------*/
 
