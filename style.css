@@ -260,7 +260,7 @@ nav a:hover {
 /*----------------- TYPOGRAPHY ------------------------*/
 
 
-h1 {font-size: 40px;
+h1 {font-size: 35px;
     line-height: 40px;
     padding-bottom: 20px;}
 
@@ -281,8 +281,8 @@ h4 {font-size: 30px;
 /*------------------- LINKS ----------------------------*/
 
 .button {
-    padding: 13px 28px;
-    font-size: 14px;
+    padding: 14px 28px;
+    font-size: 16px;
 } 
 
 /*------------------ NAVIGATION -------------------------*/
@@ -290,7 +290,7 @@ h4 {font-size: 30px;
 nav {
     display: grid;
     z-index:1;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 25% 75%;
     grid-template-areas: 
     "navlogo navlinks";
     background-color: #fff;
@@ -305,7 +305,7 @@ nav {
 
 .headergrid {
     display: grid;
-    padding: 120px 30px 0px 30px;
+    padding: 100px 30px 0px 30px;
     grid-template-columns: 100%;
     grid-template-areas: 
     "headertext"
@@ -336,6 +336,12 @@ nav {
     "feature3img"
     "feature3text";}
 
+.feature1text {grid-area: feature1text;
+    padding: 0px;}
+.feature2text {grid-area: feature2text;
+    padding: 0px;}
+.feature3text {grid-area: feature3text;
+    padding: 0px;}
 
 /*------------------ SOUVENIR GRID -------------------------*/
 
@@ -389,8 +395,8 @@ nav {
 .fa {
     padding:10px;
     margin: 0px 20px;
-    font-size: 28px;
-    width: 28px;
+    font-size: 30px;
+    width: 30px;
     box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
 }
 
