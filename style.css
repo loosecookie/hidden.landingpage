@@ -260,7 +260,7 @@ nav a:hover {
 /*----------------- TYPOGRAPHY ------------------------*/
 
 
-h1 {font-size: 35px;
+h1 {font-size: 30px;
     line-height: 40px;
     padding-bottom: 20px;}
 
@@ -274,7 +274,7 @@ h2 {font-size: 30px;
 h3 {font-size: 20px;
     line-height: 25px;}
 
-h4 {font-size: 30px;
+h4 {font-size: 25px;
     line-height: 70px;}
 
 
@@ -305,7 +305,7 @@ nav {
 
 .headergrid {
     display: grid;
-    padding: 100px 30px 0px 30px;
+    padding: 80px 30px 0px 30px;
     grid-template-columns: 100%;
     grid-template-areas: 
     "headertext"
