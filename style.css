@@ -24,29 +24,42 @@ h1 { /*FEEL LIKE A RESIDENT*/
     font-size: 50px;
     color: white;
     line-height: 55px;
-    padding-bottom: 20px;}
+    padding-bottom: 40px;}
 
-p { font-family: 'Poppins', sans-serif;
+p { font-family: 'raleway', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     color: white;
-    line-height: 25px;}
+    line-height: 23px;}
+
+p2 { font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: white;
+    line-height: 23px;}
 
 h2 { /*HEADINGS*/
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 35px;
-    line-height: 70px;}
+    font-size: 30px;
+    line-height: 50px;}
 
 h3 { /*SUB HEADINGS*/
     font-family: 'Raleway', sans-serif;
-    font-size: 24px;
-    line-height: 32px;}
+    font-size: 20px;
+    line-height: 25px;}
 
 h4 { /*SUB SUB HEADINGS*/
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    font-size: 22px;
+    line-height: 60px;}
+
+h5 { /*Hidden is a travel ...*/
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
     font-size: 25px;
+    color: white;
     line-height: 70px;}
 
 
@@ -60,19 +73,37 @@ a { color: #fff;
 }
 
 .button {
+    padding: 12px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    background-color: #E06E19;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px rgba(0,0,0, 0.3);
+    transition: all 0.3s ease 0s;
+} 
+
+.button:hover {
+  transform: translateY(-5px);
+} 
+
+.button2 {
+    margin-top: 20px;
     padding: 13px 28px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    color: #fff;
-    background-color: #EC8C34;
+    color: #E06E19;
+    background-color: #fff;
     border-radius: 5px;
-    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
+    box-shadow: 1px 2px 5px rgba(0,0,0, 0.3);
     transition: all 0.3s ease 0s;
 } 
 
-.button:hover {
+.button2:hover {
   transform: translateY(-5px);
 } 
 
@@ -91,13 +122,13 @@ nav {
 
 .navlogo {
     grid-area: navlogo;
-    padding:  5px 0px 5px 130px;}
+    padding:  10px 0px 5px 130px;}
 
 
 .navlinks {
     grid-area: navlinks;
     text-align: right;
-    padding:  10px 130px 10px 0px;}
+    padding:  5px 130px 10px 0px;}
 
 nav a:link {color: #fff}
 
@@ -110,7 +141,7 @@ nav a:hover {
 
 .headergrid {
     display: grid;
-    padding: 160px 90px 0px 130px;
+    padding: 140px 90px 130px 130px;
     background-repeat: no-repeat;
     background-image: url(Background.png);
     background-size: cover;
@@ -122,54 +153,94 @@ nav a:hover {
     padding: 60px 0px 0px 0px;}
 
 .headerimg {grid-area: headerimg;
-    padding: 0px 0px 70px 20px;}
+    padding: 40px 0px 0px 30px;}
 
+.GooglePlay {padding-left: 20px;}
 
 /*------------------ FEATURES GRID -------------------------*/
 
-.featuressection{
-    background-color:#24798B; 
-    padding: 60px 130px;
-}
 
-.featuresgrid {
+.featuresgrid1 {
     display: grid;
-    padding-top: 30px;
-    grid-template-columns: 1fr 1fr 1fr;
+    padding: 90px 130px 0px 130px;
+    background-color:#24798B; 
+    grid-template-columns: 40% 30% 30%;
     grid-template-areas: 
-    "feature1img feature2img feature3img"
-    "feature1text feature2text feature3text";}
+    "header header header"
+    "feature1img feature1mockup1 feature1mockup2"
+    "feature1text feature1mockup1 feature1mockup2";}
 
-.feature1img {grid-area: feature1img;}
-.feature2img {grid-area: feature2img;}
-.feature3img {grid-area: feature3img;}
-
+.header {grid-area: header;}
+.feature1img {grid-area: feature1img;
+    padding: 70px 0px 0px 0px;}
 .feature1text {grid-area: feature1text;
-    padding: 20px;}
+    padding: 0px 110px 20px 0px;}
+
+
+.feature1mockup1 {grid-area: feature1mockup1;
+    padding: 50px 0px 0px 0px;}
+.feature1mockup2 {grid-area: feature1mockup2;
+    padding: 50px 0px 0px 0px;}
+
+
+.featuresgrid2 {
+    display: grid;
+    padding: 60px 130px 0px 130px;
+    background-color:#96D9ED; 
+    padding-top: 30px;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-areas: 
+    "feature2img feature2mockup1 feature2mockup2"
+    "feature2text feature2mockup1 feature2mockup2"
+    "feature3img feature3mockup1 feature3mockup2"
+    "feature3text feature3mockup1 feature3mockup2";}
+
+
+.feature2img {grid-area: feature2img;
+    padding: 70px 0px 0px 0px;}
 .feature2text {grid-area: feature2text;
-    padding: 20px;}
+    padding: 0px 100px 20px 0px;}
+
+.feature2mockup1 {grid-area: feature2mockup1;
+    padding: 50px 0px 0px 0px;}
+.feature2mockup2 {grid-area: feature2mockup2;
+    padding: 50px 0px 0px 0px;}
+
+
+.featuresgrid3 {
+    display: grid;
+    padding: 60px 130px 0px 130px;
+    background-color:#F0B278; 
+    padding-top: 30px;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-areas: 
+    "feature3img feature3mockup1 feature3mockup2"
+    "feature3text feature3mockup1 feature3mockup2";}
+
+.feature3img {grid-area: feature3img;
+    padding: 70px 0px 0px 0px;}
 .feature3text {grid-area: feature3text;
-    padding: 20px;}
+    padding: 0px 100px 20px 0px;}
+
+.feature3mockup1 {grid-area: feature3mockup1;
+    padding: 50px 0px 0px 0px;}
+.feature3mockup2 {grid-area: feature3mockup2;
+    padding: 50px 0px 0px 0px;}
 
 
 /*------------------ SOUVENIR GRID -------------------------*/
 
-.souvenirsection{
-    background-color:#78C4D8; 
-    padding: 60px 130px;
-}
-
 .souvenirsgrid {
     display: grid;
-    padding: 30px 0px;
-    grid-gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr;
+    background-color:#96D9ED; 
+    padding: 90px 0px 90px 130px;
+    grid-template-columns: 100%;
     grid-template-areas: 
-    "souvenir1 souvenir2 souvenir3";}
+    "souvenirtext"
+    "souvenirimg";}
 
-.souvenir1 {grid-area: souvenir1;}
-.souvenir2 {grid-area: souvenir2;}
-.souvenir3 {grid-area: souvenir3;}
+.souvenirtext {grid-area: souvenirtext;}
+.souvenirimg {grid-area: souvenirimg;}
 
 /*------------------ TRENDING GRID -------------------------*/
 
@@ -186,22 +257,22 @@ nav a:hover {
     "newyork iceland dubai";}
 
 .positano {grid-area: positano;
-    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
+    box-shadow: 1px 2px 10px rgba(0,0,0, 0.2);
     border-radius: 0px 0px 5px 5px;}
 .bali {grid-area: bali;
-    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
+    box-shadow: 1px 2px 10px rgba(0,0,0, 0.2);
     border-radius: 0px 0px 5px 5px;}
 .bahamas {grid-area: bahamas;
-    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
+    box-shadow: 1px 2px 10px rgba(0,0,0, 0.2);
     border-radius: 0px 0px 5px 5px;}
 .newyork {grid-area: newyork;
-    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
+    box-shadow: 1px 2px 10px rgba(0,0,0, 0.2);
     border-radius: 0px 0px 5px 5px;}
 .iceland {grid-area: iceland;
-    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
+    box-shadow: 1px 2px 10px rgba(0,0,0, 0.2);
     border-radius: 0px 0px 5px 5px;}
 .dubai {grid-area: dubai;
-    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
+    box-shadow: 1px 2px 10px rgba(0,0,0, 0.2);
     border-radius: 0px 0px 5px 5px;}
 
 
@@ -212,18 +283,18 @@ nav a:hover {
 .trending5img {grid-area: trending5img;}
 .trending6img {grid-area: trending6img;}
 
-.trending1text {grid-area: trending1text; height: 90px; padding: 20px;}
-.trending2text {grid-area: trending2text; height: 90px; padding: 20px;}
-.trending3text {grid-area: trending3text; height: 90px; padding: 20px;}
-.trending4text {grid-area: trending4text; height: 90px; padding: 20px;}
-.trending5text {grid-area: trending5text; height: 90px; padding: 20px;}
-.trending6text {grid-area: trending6text; height: 90px; padding: 20px;}
+.trending1text {grid-area: trending1text; height: 90px; padding: 0px 20px;}
+.trending2text {grid-area: trending2text; height: 90px; padding: 0px 20px;}
+.trending3text {grid-area: trending3text; height: 90px; padding: 0px 20px;}
+.trending4text {grid-area: trending4text; height: 90px; padding: 0px 20px;}
+.trending5text {grid-area: trending5text; height: 90px; padding: 0px 20px;}
+.trending6text {grid-area: trending6text; height: 90px; padding: 0px 20px;}
 
 /*------------------ SOUVENIR GRID -------------------------*/
 
 .downloadgrid {
     display: grid;
-    background-color:#4A9DB2;
+    background-color:#F0B278;
     padding: 60px 130px;
     grid-template-columns: 60% 40%;
     grid-template-areas: 
@@ -243,162 +314,11 @@ nav a:hover {
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
-    background-color: #EC8C34;
-    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
+    background-color: #E06E19;
+    box-shadow: 1px 2px 5px rgba(0,0,0, 0.3);
 }
 
 .fa:hover {
     color: white;
     transform: translateY(-5px); transition-timing-function: ease-in-out; cursor: pointer;
 } 
-
-
-/*-------------------- MEDIA QUERIES - MOBILE ----------------------*/  
-    
-@media screen and (max-width: 500px) {
-
-/*----------------- TYPOGRAPHY ------------------------*/
-
-
-h1 {font-size: 30px;
-    line-height: 40px;
-    padding-bottom: 20px;}
-
-p { font-size: 18px;
-    line-height: 24px;}
-
-h2 {font-size: 30px;
-    line-height: 40px;
-    padding-bottom: 15px;}
-
-h3 {font-size: 20px;
-    line-height: 25px;}
-
-h4 {font-size: 25px;
-    line-height: 70px;}
-
-
-/*------------------- LINKS ----------------------------*/
-
-.button {
-    padding: 14px 28px;
-    font-size: 16px;
-} 
-
-/*------------------ NAVIGATION -------------------------*/
-
-nav {
-    display: grid;
-    z-index:1;
-    grid-template-columns: 25% 75%;
-    grid-template-areas: 
-    "navlogo navlinks";
-    background-color: #fff;
-    position: fixed;
-    width: 100%;
-    box-shadow: 1px 1px 4px rgba(0,0,0, 0.1);}
-    
-.navlogo {padding:  10px 0px 5px 30px;}
-.navlinks {padding:  10px 30px 10px 0px;}
-
-/*------------------ HEADER GRID -------------------------*/
-
-.headergrid {
-    display: grid;
-    padding: 80px 30px 0px 30px;
-    grid-template-columns: 100%;
-    grid-template-areas: 
-    "headertext"
-    "headerimg";}
-
-.headertext {grid-area: headertext;
-    padding: 60px 0px 0px 0px;}
-
-.headerimg {grid-area: headerimg;
-    text-align:center;
-    padding: 60px 0px 70px 0px;}
-
-
-/*------------------ FEATURES GRID -------------------------*/
-
-.featuressection{padding: 60px 30px;}
-    
-    
-.featuresgrid {
-    display: grid;
-    padding-top: 30px;
-    grid-template-columns: 100%;
-    grid-template-areas: 
-    "feature1img"
-    "feature1text"
-    "feature2img"
-    "feature2text"
-    "feature3img"
-    "feature3text";}
-
-.feature1text {grid-area: feature1text;
-    padding: 0px;}
-.feature2text {grid-area: feature2text;
-    padding: 0px;}
-.feature3text {grid-area: feature3text;
-    padding: 0px;}
-
-/*------------------ SOUVENIR GRID -------------------------*/
-
-.souvenirsection{padding: 60px 30px;}
-    
-.souvenirsgrid {
-    display: grid;
-    padding: 30px 0px;
-    grid-gap: 30px;
-    grid-template-columns: 100%;
-    grid-template-areas: 
-    "souvenir1"
-    "souvenir2"
-    "souvenir3";}
-
-/*------------------ TRENDING GRID -------------------------*/
-
-.trendingsection{padding: 60px 30px;}
-    
-.trendinggrid {
-    display: grid;
-    padding: 30px 0px;
-    grid-gap: 30px;
-    grid-template-columns: 100%;
-    grid-template-areas: 
-    "positano"
-    "bali"
-    "bahamas"
-    "newyork"
-    "iceland"
-    "dubai";}
-
- 
-/*------------------ SOUVENIR GRID -------------------------*/
-
-.downloadgrid {
-    display: grid;
-    background-color:#4A9DB2;
-    padding: 60px 30px;
-    grid-template-columns: 100%;
-    grid-template-areas: 
-    "downloadtext"
-    "downloadimg";}
-    
-.downloadimg {grid-area: downloadimg;
-    text-align: center;
-    padding: 60px 0px 0px 0px;}
-
-/*-------------------- FOOTER ----------------------*/
-
-.fa {
-    padding:10px;
-    margin: 0px 20px;
-    font-size: 30px;
-    width: 30px;
-    box-shadow: 1px 4px 20px rgba(0,0,0, 0.15);
-}
-
-
-}
