@@ -38,29 +38,29 @@ p2 { font-family: 'poppins', sans-serif;
     color: white;
     line-height: 23px;}
 
-h2 { /*HEADINGS*/
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 50px;}
-
-h3 { /*SUB HEADINGS*/
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    line-height: 25px;}
-
-h4 { /*SUB SUB HEADINGS*/
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 60px;}
-
-h5 { /*Hidden is a travel ...*/
+h2 { /*Hidden is a travel ...*/
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 25px;
     color: white;
     line-height: 70px;}
+
+h3 { /*HEADINGS*/
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 50px;}
+
+h4 { /*SUB HEADINGS*/
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height: 25px;}
+
+h5 { /*SUB SUB HEADINGS*/
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 60px;}
 
 
 /*------------------- LINKS ----------------------------*/
