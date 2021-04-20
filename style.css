@@ -30,7 +30,7 @@ p { font-family: 'raleway', sans-serif;
     font-weight: 400;
     font-size: 20px;
     color: white;
-    line-height: 23px;}
+    line-height: 26px;}
 
 p2 { font-family: 'poppins', sans-serif;
     font-weight: 400;
@@ -65,11 +65,18 @@ h5 { /*SUB SUB HEADINGS*/
 
 /*------------------- LINKS ----------------------------*/
 
-a { color: #fff;
+a {
+    color: #000;
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 20px;
     text-decoration: none;
     -webkit-transition: all 0.2s ease-in-out;
+}
+
+a:hover{
+    color: #000;
+    transition-timing-function: ease-in-out; cursor: pointer;
 }
 
 .button {
@@ -128,13 +135,16 @@ nav {
 .navlinks {
     grid-area: navlinks;
     text-align: right;
-    padding:  5px 130px 10px 0px;}
+    padding:  25px 130px 10px 0px;
+    }
 
-nav a:link {color: #fff}
+nav a:link {color: #000;
+    }
 
-nav a:visited {color: #fff;}
+nav a:visited {color: #000;}
 
 nav a:hover {
+    color: #24798B;
     -webkit-transition: all 0.2s ease-in;}
 
 /*------------------ HEADER GRID -------------------------*/
@@ -228,6 +238,22 @@ nav a:hover {
     padding: 50px 0px 0px 0px;}
 
 
+/*------------------ FEATURES GRID -------------------------*/
+
+.promovideo{
+    padding: 100px 200px;
+}
+
+#border{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.1);}
+
+.video{
+    width: 100%;
+    height: auto;
+}
+
 /*------------------ SOUVENIR GRID -------------------------*/
 
 .souvenirsgrid {
@@ -308,17 +334,96 @@ nav a:hover {
 .fa {
     padding:10px;
     margin: 0px 20px;
-    color: #fff;
+    color: #000;
     font-size: 28px;
     width: 28px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
-    background-color: #24798B;
+    background-color: #fff;
     box-shadow: 1px 2px 5px rgba(0,0,0, 0.3);
 }
 
 .fa:hover {
-    color: white;
+    color: black;
     transform: translateY(-5px); transition-timing-function: ease-in-out; cursor: pointer;
 } 
+
+
+/*-------------------- DASHBOARD ----------------------*/
+
+.dashboardgrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 40px;
+    grid-template-areas: 
+    "prototype prototype"
+    "research501 research503"
+    "launchstrategy report"
+    "promowebsite sketchbook";}
+
+
+.prototype{grid-area: prototype;
+    margin: 200px 150px 0px 150px;}
+.prototype a:hover{
+    opacity: 0.7; transition-timing-function: ease-in-out; cursor: pointer;}
+.prototypeimg {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.1)}
+
+.research501{grid-area: research501;
+    margin-left: 150px;}
+.research501 a:hover{
+    opacity: 0.7; transition-timing-function: ease-in-out; cursor: pointer;}
+.research501img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.1)}
+
+.research503{grid-area: research503;
+    margin-right: 150px;}
+.research503 a:hover{
+    opacity: 0.7; transition-timing-function: ease-in-out; cursor: pointer;}
+.research503img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.1)}
+
+.launchstrategy{grid-area: launchstrategy;
+    margin-left: 150px;}
+.launchstrategy a:hover{
+    opacity: 0.7; transition-timing-function: ease-in-out; cursor: pointer;}
+.launchstrategyimg {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.1)}
+
+.report{grid-area: report;
+    margin-right: 150px;}
+.report a:hover{
+    opacity: 0.7; transition-timing-function: ease-in-out; cursor: pointer;}
+.reportimg {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.1)}
+
+.promowebsite{grid-area: promowebsite;
+    margin-left: 150px;
+    margin-bottom: 200px;}
+.promowebsite a:hover{
+    opacity: 0.7; transition-timing-function: ease-in-out; cursor: pointer;}
+.promowebsiteimg {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.1)}
+
+.sketchbook{grid-area: sketchbook;
+    margin-right: 150px;
+    margin-bottom: 200px;}
+.sketchbook a:hover{
+    opacity: 0.7; transition-timing-function: ease-in-out; cursor: pointer;}
+.sketchbookimg {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.1)}
